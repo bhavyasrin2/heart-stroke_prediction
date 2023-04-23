@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href='/static/style.css'>
+        <title>tension</title>
+        <style>
+            #moreText2{
+            display: none;
+        }
+        </style>
+        
+    </head>
+    <body>
+        <h3>you have hypertension symptoms from our prediction!!!
+            <h2>High blood pressure can lead to stroke in different ways.</h2>
+            please verify by entering some more details that whether it leads to heart stroke or not.
+        </h3>
+        <form method="POST", action="{{url_for('stroke')}}">
+            <b> Enter AGE :  <input type="text", name='age'> <br>
+            <b> Enter SEX :   <select name="sex" id="sex">
+                <option name="select" value="select">Select</option>
+                <option name="0" value="0">female</option>
+                <option name="1" value="1">male</option> 
+                </select><br>
+            <b> do you have HYPERTENSIONL? :  <select name="hypertension" id="hypertension">
+                    <option name="select" value="select">Select</option>
+                    <option name="0" value="0">no</option>
+                    <option name="1" value="1">yes</option>
+                    
+                    
+                </select><br>
+
+            <b> Ever had a HEARTDISEASE? : <select name="heartdisease" id="heartdisease">
+                <option name="select" value="select">Select</option>
+                <option name="0" value="0">no</option>
+                <option name="1" value="1">yes</option>
+                
+                
+            </select> <br>
+            <b> Ever MARRIED? : <select name="married" id="married">
+                <option name="select" value="select">Select</option>
+                <option name="0" value="0">no</option>
+                <option name="1" value="1">yes</option>
+                
+                
+            </select> <br>
+
+            <b> WORKTYPE? : <select name="worktype" id="worktype">
+                <option name="select" value="select">Select</option>
+                <option name="0" value="0">never worked</option>
+                <option name="1" value="1">children</option>
+                <option name="2" value="2">govt job</option>
+                <option name="3" value="3">selfemployeed</option>
+                <option name="4" value="4">private</option>
+                
+                
+            </select> <br>
+            <b> RESIDENCETYPE? : <select name="residencetype" id="residencetype">
+                <option name="select" value="select">Select</option>
+                <option name="0" value="0">rural</option>
+                <option name="1" value="1">urban</option>
+               
+            </select> <br>
+
+            <b> Enter bmi : <input type="text", name='bmi'><br>
+            <div>Example:
+                        <span id="points2">for a...</span>
+                        <span id="moreText2"> 
+                            Body Mass Index (BMI) is a person's weight in kilograms (or pounds) divided by the square of height in meters (or feet).</span>
+                    <button class="input" type="button" onclick="toggleText2()" id="textButton2">
+                        Show More
+                    </button>
+                    </div>
+
+            <b> Smoking : <select name="smoking" id="smoking">
+                    <option name="select" value="select">Select</option>
+                    <option name="0" value="0">no</option>
+                    <option name="1" value="1">yes</option>
+                   
+                </select> <br><br>
+            <input type="submit" , value='predict STROKE'>
+         </form>
+         <b id="text">{{pred}}</b>
+
+         <script>
+             function toggleText2() {
+                var points = 
+                    document.getElementById("points2");
+              
+                var showMoreText =
+                    document.getElementById("moreText2");
+              
+                var buttonText =
+                    document.getElementById("textButton2");
+              
+                
+                if (points.style.display === "none") {
+                    showMoreText.style.display = "none";
+                    points.style.display = "inline";
+                    buttonText.innerHTML = "Show More";
+                }
+                else {
+              
+                    showMoreText.style.display = "inline";
+                    points.style.display = "none";
+                    buttonText.innerHTML = "Show Less";
+                }
+            }
+         </script>
+        
+        
+        
+    </body>
+
+</html>

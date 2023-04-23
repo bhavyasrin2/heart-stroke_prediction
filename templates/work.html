@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>workdemo</title>
+         <link rel="stylesheet" href='/static/style.css' />">
+        <style>
+            #moreText ,#moreText2{
+                display: none;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>HyperTension Prediction</h1>
+        <form method="POST", action="{{url_for('home')}}">
+            <br>
+            <b> Enter AGE :  <input class="input" type="text", name='age'> <br>
+            <b> Enter SEX :   <select class="input" name="sex" id="sex">
+                <option name="select" value="select">Select</option>
+                <option name="0" value="0">female</option>
+                <option name="1" value="1">male</option> 
+                </select><br>
+            <b> Enter CHESTPAIN LEVEL :  <select class="input" name="chestpain" id="chestpain">
+                    <option name="select" value="select">Select</option>
+                    <option name="0" value="0">no symptoms</option>
+                    <option name="1" value="1">small aches</option>
+                    <option name="2" value="2">medium aches</option>
+                    <option name="3" value="3">heavy</option>
+                    
+                </select><br>
+
+
+            <b> Enter MAXIMUM HEARTRATE : <input class="input" type="text", name='heartrate'><br>
+                <div>Example:
+                    <span id="points2">for a...</span>
+                    <span id="moreText2"> 
+                         50-year-old person, the estimated maximum age-related heart rate would be calculated as 220 – 50 years = 170 beats per minute (bpm).</span>
+                <button class="input" type="button" onclick="toggleText2()" id="textButton2">
+                    Show More
+                </button>
+                </div>
+            
+
+            <b> Enter EXERCISE PAIN :  <select class="input" name="exercisepain" id="exercisepain">
+                        <option name="select" value="select">Select</option>
+                        <option name="0" value="0">no</option>
+                        <option name="1" value="1">yes</option>
+                        </select><br>
+
+            <b> Enter BLOOD PRESSURE : <input class="input" type="text", name='bp'>
+            <div id="bp">Example: If your blood pressure was 120/80 mmHg.
+                <span id="points">...</span>
+                <span id="moreText"> 
+                    Systolic pressure is upper number used for hypertension i.e,enter 120.</span>
+            <button type="button" class="input" onclick="toggleText()" id="textButton">
+                Show More
+            </button>
+            </div><br><br>
+
+             <input class="input" type="submit" , value='predict HyperTension' >
+         </form>
+        
+        {% if pred=="you have hypertension symptoms" %}
+        <b class="input" id="textstore">{{pred}}</b>
+        <a href="{{url_for('symptoms')}}">Click Here</a>
+        {% elif pred=="cool! no tension" %}
+        <b class="input" id="textstore">{{pred}}</b>
+        <a href="{{url_for('nosymptoms')}}">Click Here</a>
+        {% endif %}
+
+
+
+        
+          
+        <script>
+            function toggleText() {
+                var points = 
+                    document.getElementById("points");
+              
+                var showMoreText =
+                    document.getElementById("moreText");
+              
+                var buttonText =
+                    document.getElementById("textButton");
+              
+                
+                if (points.style.display === "none") {
+                    showMoreText.style.display = "none";
+                    points.style.display = "inline";
+                    buttonText.innerHTML = "Show More";
+                }
+                else {
+              
+                    showMoreText.style.display = "inline";
+                    points.style.display = "none";
+                    buttonText.innerHTML = "Show Less";
+                }
+            }
+            function toggleText2() {
+                var points = 
+                    document.getElementById("points2");
+              
+                var showMoreText =
+                    document.getElementById("moreText2");
+              
+                var buttonText =
+                    document.getElementById("textButton2");
+              
+                
+                if (points.style.display === "none") {
+                    showMoreText.style.display = "none";
+                    points.style.display = "inline";
+                    buttonText.innerHTML = "Show More";
+                }
+                else {
+              
+                    showMoreText.style.display = "inline";
+                    points.style.display = "none";
+                    buttonText.innerHTML = "Show Less";
+                }
+            }
+        
+
+        </script>
+
+        
+    </body>
+
+</html>
