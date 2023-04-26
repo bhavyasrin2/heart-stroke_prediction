@@ -27,6 +27,8 @@ Connected with web application using
         
 ![mainserver](https://user-images.githubusercontent.com/127487538/234607692-0377cabb-f7ac-4ada-b179-c2f49cf836fe.png)
 ![serverpage1output](https://user-images.githubusercontent.com/127487538/234608057-7a588ab0-497b-485e-bb0e-391db16b77c0.png)
+![serverpage2](https://user-images.githubusercontent.com/127487538/234608278-a87b8859-b7ad-41f6-bbc5-8c77b3b0430d.png)
+
 
         
        
