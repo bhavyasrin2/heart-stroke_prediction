@@ -25,6 +25,8 @@ Connected with web application using
 ### Web Server:
         Flask
         
+![serverpage1](https://user-images.githubusercontent.com/127487538/234606785-122e519b-1d0e-4325-9b72-8a9e2a18b63a.png)
+        
        
 
 
