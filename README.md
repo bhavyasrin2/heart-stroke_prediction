@@ -25,9 +25,21 @@ Connected with web application using
 ### Web Server:
         Flask
         
+###server opens with HyperTension prediction:
 ![mainserver](https://user-images.githubusercontent.com/127487538/234607692-0377cabb-f7ac-4ada-b179-c2f49cf836fe.png)
+
+###output:
 ![serverpage1output](https://user-images.githubusercontent.com/127487538/234608057-7a588ab0-497b-485e-bb0e-391db16b77c0.png)
+
+if a person have symptoms it goes to heart stroke prediction otherwise a webpage open with healthy diet and life benefits.
+
+
+###server opens with HeartStroke prediction 
 ![serverpage2](https://user-images.githubusercontent.com/127487538/234608278-a87b8859-b7ad-41f6-bbc5-8c77b3b0430d.png)
+
+###output
+![serverpage2output](https://user-images.githubusercontent.com/127487538/234608490-ff6cf870-0643-4e05-ba1a-6b0b10dc94dd.png)
+
 
 
         
