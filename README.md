@@ -1,14 +1,30 @@
-# heart-stroke_prediction
-ABSTRACT
+#  Machine Learning software that predicts hypertension and also heart stroke.
+
+
 
 Hypertension, commonly known as high blood pressure, is a leading risk factor for cardiovascular diseases, including stroke. Stroke, a serious medical condition caused by disruption of blood flow to the brain, is a major cause of mortality worldwide. The relationship between hypertension and stroke has been extensively studied, and evidence suggests that hypertension plays a significant role in the development and progression of stroke.
-This literature review aims to provide an overview of the existing research on the detection of hypertension and its association with the risk of stroke. The review begins with an overview of hypertension, including its definition, risk factors, and prevalence. The diagnostic criteria and methods for detecting hypertension are discussed, including blood pressure measurement techniques.
-The review then delves into the link between hypertension and stroke, examining the evidence from observational studies. The mechanisms underlying the relationship between hypertension and stroke are explored.
-Furthermore, the review highlights the risk factors that contribute to the development of hypertension, including lifestyle factors such as diet, physical activity, and stress, as well as genetic and environmental factors. The impact of hypertension treatment, including lifestyle modifications and pharmacological interventions, on reducing the risk of stroke is also discussed. 
-Lastly, the review concludes with recommendations for future research and interventions to improve hypertension detection and management to reduce the risk of stroke. Early detection and management of hypertension are critical in preventing stroke and its associated morbidity and mortality. Further research is needed to better understand the complex relationship between hypertension and stroke and to develop effective strategies for hypertension detection, prevention, and management to reduce the burden of stroke in the population.
+The business can focus on promoting preventive measures such as awareness campaigns, education programs, and lifestyle interventions to reduce the risk factors associated with heart stroke, such as high blood pressure, high cholesterol, smoking, and sedentary behaviour. can collect and analyze data related to heart stroke, such as patient outcomes, treatment effectiveness, and population health trends. This data can be used to improve care protocols, develop evidence-based guidelines, and support research efforts
+Overall, the  model for hypertension detection using Bp, heartrate, age, gender and cholesterol could involve a combination of data collection, data analysis etc to provide a best and clear solution for detecting and managing hypertension.and coming to heart stroke prediction we use this hypertension prediction and aslo bmi,working type,lifestyle fators atc.
 
-BUSINESS MODEL
+#### DataSource:https://www.kaggle.com/datasets/prosperchuks/health-dataset
 
-Mobile Applications: Develop a mobile application that allows users to monitor their blood pressure regularly, receive alerts for abnormal readings, and track their health over time. Offer premium features or subscription plans to generate revenue. collect and gather data from the database including their blood pressure. Heartrate, gender and cholesterol levels. This data can be collected through various means such as wearable device, health screening programs or health records. utilize machine learning algorithms to analyse the collected data and then we have to identify the patterns that may indicate hypertension risk .it provides individuals with a report that outlines the risk of developing hypertension based on analysing data. so that it can recommend us for managing and reducing the hyper tension risk. We can also raise awareness about the importance of hypertension detection. We can also educate users about the benefits of early detection and management of hypertension and how the service can help improve their health outcomes. We can also continuously improve and update the hyper tension detection based on feedback, user needs and emerging research.
-heart stroke, a serious medical condition that occurs when blood flow to the brain is disrupted, can focus on various aspects including prevention, diagnosis, treatment, rehabilitation, and support. The business can focus on promoting preventive measures such as awareness campaigns, education programs, and lifestyle interventions to reduce the risk factors associated with heart stroke, such as high blood pressure, high cholesterol, smoking, and sedentary behaviour. can collect and analyze data related to heart stroke, such as patient outcomes, treatment effectiveness, and population health trends. This data can be used to improve care protocols, develop evidence-based guidelines, and support research efforts
-Overall, the business model for hypertension detection using Bp, heartrate, age, gender and cholesterol could involve a combination of data collection, data analysis etc to provide a best and clear solution for detecting and managing hypertension.
+### Coding language for MachineLearning:
+Python 3.9.6
+#### libraries used:
+         Pandas
+         Matplolib
+         Sklern
+         Seaborn
+#### Models:
+       Random-forest classifier for hypertension prediction
+       Decision Trees for heart stroke prediction
+Connected with web application using 
+### Web Development:
+        HTML
+        CSS
+### Web Server:
+        Flask
+        
+       
+
+
